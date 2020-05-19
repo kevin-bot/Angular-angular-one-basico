@@ -1,0 +1,23 @@
+<h1>ESTRING INTERPOLATION</h1>
+<p>{{getconsepto()}}</p>
+<h1>PROPERTY BINDING</h1>
+<p>{{getconseptoProperty()}}</p>
+<button [disabled] = "estadoBtn">Btn Property </button>
+<button (click) = "cambiar_estadoBtn()">Cabiar esta btn</button>
+<h1>CLASS BINDING</h1>
+<p>{{getconseptClassBinding()}}</p>
+<h3 [class.text-red] = "getHasError()">Mi error class binding</h3>
+
+<h1>Style binding</h1>
+<p>{{getconseptStyleBinding()}}</p>
+<button [style.backgroundColor] = "getHasError() ? 'green':'red' ">Btn style binding</button>
+
+<h1>Event binding</h1>
+Vamos a poder utilizar el obeto event en el DOM, para analizar sus propiedades esto de hace 
+con () parentesis (evento del DOM) = "function angular"
+<br>
+<button (click) = "save($event)">Guardar evento click</button>
+<button (mouseover) = "save($event)">Guardar evento mouse event</button>
+
+<h1>Event Filtering</h1>
+vamos a poder utilizar a un filtro en un determinado evento, 
